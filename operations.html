@@ -15,14 +15,14 @@ function operaciones(op)
         restar: function restarNumeros(n1, n2) {
             return (parseInt(n1) - parseInt(n2));
         },
-        
+ /* COMENTO PARA EL PRIMER COMMIT (SUMA Y RESTA)       
         multiplicar: function multiplicarNumeros(n1, n2) {
             return (parseInt(n1) * parseInt(n2));
         },
 
         dividir: function dividirNumeros(n1, n2) {
             return (parseInt(n1) / parseInt(n2));
-        }
+        } */
 
 
     };
@@ -33,18 +33,18 @@ function operaciones(op)
     var num2 = document.getElementById("num2").value;
 
     
-    //Comprobamos si se ha introducido nÃºmeros en las cajas
+    //Comprobamos si se ha introducido números en las cajas
     if (isNaN(parseFloat(document.getElementById('num1').value))) {
-        alert("Indique un nÃºmero en 'numero1'");
+        alert("Indique un número en 'numero1'");
         document.getElementById("num1").innerText = "0";
         document.getElementById("num1").focus();
         } else if (isNaN(parseFloat(document.getElementById('num2').value))) {
-        alert("Indique un nÃºmero en 'numero2'");
+        alert("Indique un número en 'numero2'");
         document.getElementById("num2").innerText = "0";
         document.getElementById("num2").focus();
     }
     else {
-    //Si se han introducido los nÃºmeros en Ã¡mbas cajas, operamos:
+    //Si se han introducido los números en ámbas cajas, operamos:
         switch(op) {
             case 'sumar':
                 var resultado = ops.sumar(num1, num2);
@@ -53,7 +53,7 @@ function operaciones(op)
             case 'restar':
                 var resultado = ops.restar(num1, num2);
                 alert (resultado);
-                break;
+                break;      /* COMENTO PARA EL PRIMER COMMIT (SUMA Y RESTA)
             case 'multiplicar':
                 var resultado = ops.multiplicar(num1, num2);
                 alert(resultado);
@@ -62,7 +62,7 @@ function operaciones(op)
                 var resultado = ops.dividir(num1, num2);
                 alert(resultado);
                 break;
-
+*/
         }
     }
 
@@ -72,18 +72,17 @@ function operaciones(op)
 </head>
 
 <body>
-<!-- comento la instruciÃ³n e inserto la nueva
-<h1>Operations de Francisco J. HernÃ¡ndez</h1> -->
-<h1>Operations de Andrea papa</h1>
+
+<h1>Operations de Francisco J. Hernández</h1>
 
 <form>
-    NÃºmero 1: <input id="num1" type="number" />
-    NÃºmero 2: <input id="num2" type="number" />
+    Número 1: <input id="num1" type="number" />
+    Número 2: <input id="num2" type="number" />
     <br /><br />
     <input type="button" value="SUMAR" onclick="operaciones('sumar'); return false;" /><br />
-    <input type="button" value="RESTAR" onclick="operaciones('restar'); return false;" /><br />
+    <input type="button" value="RESTAR" onclick="operaciones('restar'); return false;" /><br /> <!-- COMENTO PARA EL PRIMER COMMIT (SUMA Y RESTA)
     <input type="button" value="MULTIPLICAR" onclick="operaciones('multiplicar'); return false;" /><br />
-    <input type="button" value="DIVIDIR" onclick="operaciones('dividir'); return false;" />
+    <input type="button" value="DIVIDIR" onclick="operaciones('dividir'); return false;" />  -->
 </form>
 
 </body>
