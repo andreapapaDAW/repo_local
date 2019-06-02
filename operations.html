@@ -18,12 +18,12 @@ function operaciones(op)
         
         multiplicar: function multiplicarNumeros(n1, n2) {
             return (parseInt(n1) * parseInt(n2));
-        },
+        }/* comentario para Punto 6, MULTIPLICAR,
 
         dividir: function dividirNumeros(n1, n2) {
             return (parseInt(n1) / parseInt(n2));
         }
-
+*/
 
     };
 
@@ -57,12 +57,12 @@ function operaciones(op)
             case 'multiplicar':
                 var resultado = ops.multiplicar(num1, num2);
                 alert(resultado);
-                break;
+                break;  /* comentario para Punto 6, MULTIPLICAR
             case 'dividir':
                 var resultado = ops.dividir(num1, num2);
                 alert(resultado);
                 break;
-
+*/
         }
     }
 
@@ -82,8 +82,8 @@ function operaciones(op)
     <br /><br />
     <input type="button" value="SUMAR" onclick="operaciones('sumar'); return false;" /><br />
     <input type="button" value="RESTAR" onclick="operaciones('restar'); return false;" /><br />
-    <input type="button" value="MULTIPLICAR" onclick="operaciones('multiplicar'); return false;" /><br />
-    <input type="button" value="DIVIDIR" onclick="operaciones('dividir'); return false;" />
+    <input type="button" value="MULTIPLICAR" onclick="operaciones('multiplicar'); return false;" /><br /> <!-- comentario para Punto 6, MULTIPLICAR
+    <input type="button" value="DIVIDIR" onclick="operaciones('dividir'); return false;" />   -->
 </form>
 
 </body>
