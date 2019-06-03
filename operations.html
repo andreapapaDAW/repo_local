@@ -19,10 +19,10 @@ function operaciones(op)
         multiplicar: function multiplicarNumeros(n1, n2) {
             return (parseInt(n1) * parseInt(n2));
         },
-/* COMENTO PARA EL SEGUNDO COMMIT (MULTIPLICAR)
+/* COMENTO PARA EL SEGUNDO COMMIT (MULTIPLICAR) */
         dividir: function dividirNumeros(n1, n2) {
             return (parseInt(n1) / parseInt(n2));
-        } */
+        } /**/
 
 
     };
@@ -33,18 +33,18 @@ function operaciones(op)
     var num2 = document.getElementById("num2").value;
 
     
-    //Comprobamos si se ha introducido números en las cajas
+    //Comprobamos si se ha introducido nï¿½meros en las cajas
     if (isNaN(parseFloat(document.getElementById('num1').value))) {
-        alert("Indique un número en 'numero1'");
+        alert("Indique un nï¿½mero en 'numero1'");
         document.getElementById("num1").innerText = "0";
         document.getElementById("num1").focus();
         } else if (isNaN(parseFloat(document.getElementById('num2').value))) {
-        alert("Indique un número en 'numero2'");
+        alert("Indique un nï¿½mero en 'numero2'");
         document.getElementById("num2").innerText = "0";
         document.getElementById("num2").focus();
     }
     else {
-    //Si se han introducido los números en ámbas cajas, operamos:
+    //Si se han introducido los nï¿½meros en ï¿½mbas cajas, operamos:
         switch(op) {
             case 'sumar':
                 var resultado = ops.sumar(num1, num2);
@@ -57,12 +57,12 @@ function operaciones(op)
             case 'multiplicar':
                 var resultado = ops.multiplicar(num1, num2);
                 alert(resultado);
-                break;     /* COMENTO PARA EL SEGUNDO COMMIT (MULTIPLICAR)
+                break;     /* COMENTO PARA EL SEGUNDO COMMIT (MULTIPLICAR)*/
             case 'dividir':
                 var resultado = ops.dividir(num1, num2);
                 alert(resultado);
                 break;
-*/
+/**/
         }
     }
 
@@ -73,16 +73,16 @@ function operaciones(op)
 
 <body>
 <!--
-<h1>Operations de Francisco J. Hernández</h1> -->
+<h1>Operations de Francisco J. Hernï¿½ndez</h1> -->
 <h1>Operations de Andrea Papa</h1>
 <form>
-    Número 1: <input id="num1" type="number" />
-    Número 2: <input id="num2" type="number" />
+    Nï¿½mero 1: <input id="num1" type="number" />
+    Nï¿½mero 2: <input id="num2" type="number" />
     <br /><br />
     <input type="button" value="SUMAR" onclick="operaciones('sumar'); return false;" /><br />
     <input type="button" value="RESTAR" onclick="operaciones('restar'); return false;" /><br /> <!-- COMENTO PARA EL PRIMER COMMIT (SUMA Y RESTA) -->
-    <input type="button" value="MULTIPLICAR" onclick="operaciones('multiplicar'); return false;" /><br /> <!-- COMENTO PARA EL SEGUNDO COMMIT (MULTIPLICAR)
-    <input type="button" value="DIVIDIR" onclick="operaciones('dividir'); return false;" />  -->
+    <input type="button" value="MULTIPLICAR" onclick="operaciones('multiplicar'); return false;" /><br /> <!-- COMENTO PARA EL SEGUNDO COMMIT (MULTIPLICAR)-->
+    <input type="button" value="DIVIDIR" onclick="operaciones('dividir'); return false;" />  <!-- -->
 </form>
 
 </body>
